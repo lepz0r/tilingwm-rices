@@ -1,0 +1,126 @@
+* {
+    border: none;
+    font-family: FiraMono Nerd Font; 
+    /* font-family: cozette; */
+    font-size: 12px;
+    min-height: 0;
+}
+
+#custom-timeprefix, #custom-cpuprefix, #pulseaudio.prefix, #custom-dateprefix, #custom-cpuprefix, #custom-memoryprefix, #custom-playerctl-prefix, #custom-playerctl-prefix{
+    font-family: "Font Awesome 6 Free Solid";
+    font-size: 12px;
+}
+
+#pulseaudio{
+    background: #96CDFB;
+    color: #1e1e2e;
+}
+
+
+#tray, #custom-trayright{
+	background: #96cdfb;
+}
+
+#custom-trayright {
+	font-size : 0;
+}
+
+
+window {
+    /* background: #1e1e2e; */
+    background: rgba(30, 30, 46, 0);
+    color: #d9e0ee;
+}
+
+#window, #clock, #custom-timeprefix, #custom-cpuprefix, #custom-memoryprefix,#cpu, #custom-dateprefix, #custom-memoryprefix, #memory, #pulseaudio, #tray, #custom-playerctl, #custom-playerctl-prefix, #custom-trayright{
+margin: 4px 0px 4px 0px;
+}
+
+
+#window {
+	border-radius: 16px;
+        background: rgba(30, 30, 46, 0.98);
+}
+
+#tray {
+	padding: 0px 6px 0px 6px;
+	margin-right:-6px;
+}
+
+window#waybar.solo{
+        background: #1e1e2e;
+}
+
+@import url("app.css");
+
+window#waybar.empty #window, window#waybar.solo #window{
+	background: transparent;
+}
+
+window#waybar.floating, window#waybar.tiled{
+        background: transparent;
+}
+
+/* dynamic color for some apps */
+
+
+#custom-playerctl, #custom-playerctl-prefix {
+	background: #DDB6F2;
+	color: #1e1e2e;
+}
+
+#custom-barpadding{
+	font-size : 0;
+	padding: 0px 2px 0px 2px;
+}
+
+#workspaces {
+	all: initial;
+        background: #1e1e2e;
+	border-radius: 16px;
+        margin: 3px 0px 3px 0px;
+	padding: 3px;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0px 7px 0px 6px;
+    background: transparent;
+    border-radius: 16px;
+    color: #d9e0ee;
+}
+
+#workspaces button.focused {
+    background: #F5C2E7;
+    color: #1e1e2e;
+}
+
+#clock {
+    padding: 0 6px 0 0;
+}
+
+#clock.time, #custom-timeprefix{
+    color : #1e1e2e;
+    background-color: #DDB6F2;
+}
+
+#custom-dateprefix, #custom-timeprefix, #pulseaudio.prefix, #custom-playerctl-prefix, #custom-cpuprefix, #custom-memoryprefix{
+    border-radius: 16px 0px 0px 16px;
+    padding: 0px 0px 0px 5px;
+    margin-left: 4px;
+}
+
+#clock.date, #clock.time, #custom-playerctl, #custom-trayright, #memory, #cpu{
+	border-radius: 0px 16px 18px 0px;
+	padding: 0px 10px 0px 0px;
+}
+
+#clock.date, #custom-dateprefix, #custom-memoryprefix, #memory{
+    color : #1e1e2e;
+    background-color: #F28FAD;
+}
+
+#custom-cpuprefix, #cpu{
+    color : #1e1e2e;
+    background-color: #F8BD96;
+}

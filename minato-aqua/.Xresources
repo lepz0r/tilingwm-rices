@@ -1,0 +1,44 @@
+
+!URxvt.font:     xft:FantasqueSansMono Nerd Font:pixelsize=16:antialias=true
+URxvt.font:     xft:cozette:pixelsize=16
+!URxvt.letterSpace: -1
+URxvt.scrollBar: false
+URxvt.depth: 32
+XTerm*allowSendEvents: true
+
+! special
+*.foreground:   #f8f8f2
+*.background:   [95]#5a5475
+*.cursorColor:  #f8f8f2
+
+! black
+*.color0:       #8077a8
+*.color8:       #8077a8
+
+! red
+*.color1:       #ff857f
+*.color9:       #ff9f9a
+
+! green
+*.color2:       #afecad
+*.color10:      #b4e8b3
+
+! yellow
+*.color3:       #ffea00
+*.color11:      #ffea00
+
+! blue
+*.color4:       #c5a3ff
+*.color12:      #c5a3ff
+
+! magenta
+*.color5:       #ffb8d1
+*.color13:      #ffb8d1
+
+! cyan
+*.color6:       #c2ffdf
+*.color14:      #c2fddf
+
+! white
+*.color7:       #f8f8f2
+*.color15:      #ffffff

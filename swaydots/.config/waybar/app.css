@@ -1,0 +1,28 @@
+window#waybar.foot, window#waybar.kitty, window#waybar.alacritty, window#waybar.urxvt{
+        background: rgba(30, 30, 46, 0.98);
+}
+
+/* Firefox & LibreWolf (catppuccin theme) */
+window#waybar.firefox, window#waybar.librewolf, window#waybar.firedragon{
+        background: #131020;
+}
+
+window#waybar.spotify, window#waybar.mpv, window#waybar.imv, window#waybar.glxgears{
+        background: #000000;
+}
+
+window#waybar.chromium-browser-chromium, window#waybar.chrome, window#waybar.chromium{
+	background:#dee1e6;
+	color: #1e1e2e;
+}
+
+window#waybar.steam{
+	background:#2a2e33;
+}
+
+/* Discord default theme */
+/* window#waybar.discord{
+        background: #36393f;
+} */
+
+

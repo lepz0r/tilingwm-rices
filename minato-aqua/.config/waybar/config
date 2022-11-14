@@ -1,0 +1,72 @@
+{
+    "height": 18,
+    "margin-top": 4,
+    "margin-left": 8,
+    "margin-right": 8,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["custom/separatorright1","custom/dateprefix","clock#date","custom/separatorright2","custom/timeprefix","clock#time","custom/separatorright3","pulseaudio#prefix","pulseaudio#volume","tray"],
+    "sway/window": {
+	"format": " {} ",
+        "max-length": 50,
+    },
+    "clock#time": {
+    	"format": "{:%l:%M:%S}",
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+	"interval": 1
+    },
+    "custom/playerctl-prefix": {
+	"exec": "~/.config/polybar/scripts/playerctl-status -s 2> /dev/null ",
+	"format": " {} ",
+	"interval": 1
+    },
+    "custom/playerctl#suffix": {
+	"exec": "~/.config/polybar/scripts/playerctl-status 2> /dev/null",
+	"format": "{} ",
+	"interval": 1
+    },
+    "clock#date": {
+        "format": "{:%a %b %d, %Y}",
+	"interval": 1
+    },
+    "custom/timeprefix": {
+    	"format": "  "
+    },
+    "custom/dateprefix": {
+    	"format": "  "
+    },
+    "custom/memoryprefix": {
+    	"format": "  "
+    },
+    "memory": {
+    	"format": "{used:0.2f}/{total:0.2f} G "
+    },
+    "custom/cpuprefix": {
+    	"format": "  "
+    },
+    "cpu":{
+	"format": "{usage}% "
+    },
+    "pulseaudio#prefix": {
+    	"format": "  ",
+    	"format-muted": "  "
+    },
+    "custom/separatorright1": {
+    	"format": ""
+    },
+    "custom/separatorright2": {
+    	"format": ""
+    },
+    "custom/separatorright3": {
+    	"format": ""
+    },
+    "custom/separatorright4": {
+    	"format": ""
+    },
+    "custom/separatorright5": {
+    	"format": ""
+    },
+    "tray":{
+	"spacing": 10
+    }
+}

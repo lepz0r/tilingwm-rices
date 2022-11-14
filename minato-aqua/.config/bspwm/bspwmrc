@@ -1,0 +1,29 @@
+#!/bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+hsetroot -cover ~/Pictures/92290065_p0-waifu2x.png &
+
+picom --experimental-backend &
+
+polybar -r mainbar0 &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         3
+bspc config window_gap           8
+
+bspc config normal_border_color  "#5a5475"
+bspc config focused_border_color "#ffb8d1"
+
+bspc config split_ratio          0.52
+#bspc config borderless_monocle   true
+#bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+xrdb ~/.Xresources

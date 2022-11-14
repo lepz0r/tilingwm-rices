@@ -1,22 +1,14 @@
-Gruv Tao
-========
-[gruvbox](https://github.com/morhetz/gruvbox) based rice.
+# My Tiling WM Rice Collection
 
+Check each directories for more info about rices
 
-vim color scheme: [gruvbox (community edition)](https://github.com/gruvbox-community/gruvbox) \
-Bar : [polybar](https://polybar.github.io/) \
-Terminal : [kitty](https://sw.kovidgoyal.net/kitty/) \
-Wallpaper : [by あまのとう](https://www.pixiv.net/en/artworks/91124215) \
-neofetch Image : [by 七海 杏](https://www.pixiv.net/en/artworks/95046677) 
+## Screenshots
 
-Installation
-------------
-Requires xmonad 0.17 & xmonad-contrib 0.17
-
-Copy everything to your home directory
-
-Screenshots
----
-
-![Screenshot](Screenshots/2021-12-28_23:08:45.png)
-![Screenshot](Screenshots/2021-12-28_14:06:31.png)
+![gruv-tao](gruv-tao/Screenshots/2021-12-28_14:06:31.png)
+[gruv-tao](gruv-tao)
+![arch-chan](arch-chan/Screenshots/2022-03-10_16:15:50.png)
+[arch-chan](arch-chan)
+![minato-aqua](minato-aqua/Screenshots/2022-01-14_04:06:01.png)
+[minato-aqua](minato-aqua)
+![swaydots](swaydots/Screenshots/2022-02-12_20:05:34.png)
+[swaydots](swaydots)

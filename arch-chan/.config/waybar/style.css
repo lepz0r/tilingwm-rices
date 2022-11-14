@@ -1,0 +1,149 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: cozette; 
+    letter-spacing: -1px;
+    font-size: 13px;
+    min-height: 0;
+}
+
+#custom-separatorright1, #custom-separatorright2, #custom-separatorright3, #custom-separatorright4, #custom-separatorright5{
+    font-family: PowerlineSymbols Medium;
+    font-size: 17px;
+    padding-top: 0px;
+}
+
+
+#custom-timeprefix, #pulseaudio.prefix, #custom-dateprefix, #custom-cpuprefix, #custom-memoryprefix, #custom-playerctl-prefix{
+	font-family: Font Awesome\ 6 Free Solid;
+        font-size: 12px;
+}
+
+#custom-separatorright1{
+    color: #7aa2f7;
+}
+
+#custom-separatorright2{
+    color: #7dcfff;
+    background:#7aa2f7;
+}
+
+#custom-separatorright3{
+    color:#b4f9f8;
+    background:#7dcfff;
+}
+
+#custom-separatorright4{
+	color:#ae81ff;
+	background: #8077a8;
+}
+
+#custom-separatorright5{
+	color: #8077a8;
+}
+
+#pulseaudio, #tray{
+    background: #b4f9f8;
+    color: #1a1b26;
+}
+
+window#waybar {
+    background: transparent;
+    color: #a9b1d6;
+}
+
+/* window#waybar.solo {
+        background: rgba(26, 27, 38, 0.98);
+    color: #a9b1d6;
+}
+
+window#waybar.librewolf {
+        background: rgba(26, 27, 38, 1);
+    color: #a9b1d6;
+} */
+
+
+#pulseaudio.volume{
+    padding: 0 8px 0 0;
+}
+
+window#waybar.empty #window {
+	margin: 0 4px;
+}
+
+#window {
+	margin: 0 4px;
+}
+
+#custom-playerctl {
+	border-bottom: 2px solid #e0af68;
+	margin: 0 4px 0 0px;
+}
+
+#custom-playerctl-prefix {
+	border-bottom: 2px solid #e0af68;
+	margin: 0 0px 0 8px;
+}
+
+#workspaces {
+	padding: 0px 6px;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background: transparent;
+    color: #a9b1d6;
+}
+
+#workspaces button.focused {
+    border-bottom: 2px solid #7aa2f7;
+}
+
+#cpu,#custom-cpuprefix {
+    background:#ae81ff;
+}
+
+#memory,#custom-memoryprefix {
+    background:#8077a8;
+}
+
+#clock {
+    padding: 0 6px 0 0;
+}
+
+#clock.time, #custom-timeprefix{
+    color : #1a1b26;
+    background-color: #7dcfff;
+}
+
+#clock.date, #custom-dateprefix{
+    color : #1a1b26;
+    background-color: #7aa2f7;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

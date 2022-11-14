@@ -1,0 +1,209 @@
+[colors]
+background = #5a5475
+lightbackground = #fbf1c7
+background-transparent = #f25a5475
+foreground = #f8f8f2
+selected = #8077a8
+red = #F92672
+darkred = #F92672
+traybackground = #A8757B
+yellow = #ffea00
+cyan = #c2ffdf
+orange = #fe8019
+darkorange = #d65d0e
+pink = #ffb8d1
+purple = #716799
+darkpurple = #a093c7
+lightblack = #f8f8f2
+lightblue  = #91acd1
+white  = #d2d4de
+
+[bar/mainbar0]
+modules-left = arrowleft1 ewmh arrowleft1 playerctlstatus playerctlplaying
+modules-center = windowtitle
+line-size = 2
+line-color = ${colors.red}
+modules-right = arrowright2 date arrowright4 time arrowright5 pulseaudio
+;modules-right = arrowright1 memory arrowright6 cpu arrowright2 date arrowright4 time
+height = 18
+offset-y = 4
+offset-x = 8
+width = 100%: -12
+;#radius = 4
+;tray-detached = false
+tray-offset-x = -4
+
+wm-restack = bspwm
+
+tray-position = right
+tray-background = ${colors.cyan}
+
+
+background = ${colors.background-transparent}
+foreground = ${colors.foreground}
+font-1 = "CozetteVector Nerd Font:style=Solid:pixelsize=9:antialias=false;2"
+font-0 = "cozette;2"
+font-3 = "PowerlineSymbols:pixelsize=20:antialias=false;6"
+font-4 = "CozetteVector Nerd Font:style=Solid:pixelsize=12:antialias=false;3"
+font-5 = "Noto Sans CJK JP:antialias=false:pixelsize=8;2"
+font-6 = "Noto Sans CJK KR:antialias=false:pixelsize=8;1"
+font-7 = "Noto Sans CJK SC:antialias=false:pixelsize=8;1"
+font-2 = "FiraCode Nerd Font:antialias=false:rgba=none:pixelsize=16;3"
+
+[module/playerctlstatus]
+type = custom/script
+label = " %output% "
+exec = ~/.config/polybar/scripts/playerctl-status -s
+format-underline = ${colors.yellow}
+
+[module/playerctlplaying]
+type = custom/script
+exec = ~/.config/polybar/scripts/playerctl-status
+interval = 1
+label = "%output% "
+format-underline = ${colors.yellow}
+
+[module/cpu]
+type = internal/cpu
+;format-prefix = ""
+format-prefix = " "
+label = "%percentage%% "
+format-background = ${colors.selected}
+;format-foreground = ${colors.white}
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+[module/memory]
+type = internal/memory
+format-prefix = " "
+;format-prefix-font = 2
+label = "%percentage_used%% "
+format-background = ${colors.purple}
+
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+
+[module/date]
+format-prefix = " "
+;format-prefix-font = 5
+
+type = internal/date
+date = "%a %b %d, %Y "
+format-foreground = ${colors.purple}
+format-background = ${colors.pink}
+
+[module/arrowleft1]
+type = custom/text
+content = " "
+content-background = ${colors.background2}
+content-foreground = ${colors.background2}
+
+[module/traypadding]
+type = custom/text
+content = "     "
+content-background = ${colors.lightbackground}
+
+
+
+[module/arrowleft2]
+type = custom/text
+;content = ""
+content-background = ${colors.background}
+content-foreground = ${colors.purple}
+
+[module/arrowright1]
+type = custom/text
+content = ""
+content-font = 4
+content-foreground = ${colors.purple}
+
+[module/arrowright2]
+type = custom/text
+content = ""
+;content-background = ${colors.selected}
+content-foreground = ${colors.pink}
+content-font = 4
+
+
+[module/arrowright3]
+type = custom/text
+content = ""
+content-font = 4
+content-background = ${colors.red}
+content-foreground = ${colors.purple}
+
+[module/arrowright4]
+type = custom/text
+content = ""
+content-font = 4
+content-background = ${colors.pink}
+content-foreground = ${colors.yellow}
+
+[module/arrowright5]
+type = custom/text
+content = ""
+content-font = 4
+content-background = ${colors.yellow}
+content-foreground = ${colors.cyan}
+
+[module/arrowright6]
+type = custom/text
+content = ""
+content-font = 4
+content-background = ${colors.purple}
+content-foreground = ${colors.selected}
+
+[module/time]
+format-prefix = " "
+type = internal/date
+date = "%l:%M:%S "
+format-prefix-font = 2
+format-background = ${colors.yellow}
+format-foreground = ${colors.purple}
+
+[module/windowtitle]
+type = internal/xwindow
+label = " %title% "
+;format-underline = ${colors.darkorange}
+format-foreground = ${colors.foreground}
+
+[module/ewmh]
+type = internal/xworkspaces
+
+enable-click = true
+enable-scroll = true
+
+label-active = " %name% "
+label-empty= ""
+label-occupied= " %name% "
+label-urgent= " %name% "
+
+
+label-active-background = ${colors.selected}
+label-active-underline = ${colors.pink}
+label-occupied-background = ${colors.background2}
+label-urgent-background = ${colors.red}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume><label-volume>
+label-volume = "%percentage%% "
+label-muted = " "
+ramp-volume-0 = " "
+;ramp-volume-1 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+label-muted-font = 2
+;ramp-volume-0-font = 2
+;ramp-volume-1-font = 2
+;ramp-volume-2-font = 2
+label-volume-background = ${colors.cyan}
+label-volume-foreground = ${colors.purple}
+label-muted-background = ${colors.cyan}
+label-muted-foreground = ${colors.purple}
+ramp-volume-background = ${colors.cyan}
+ramp-volume-foreground = ${colors.purple}
