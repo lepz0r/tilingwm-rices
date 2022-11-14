@@ -1,0 +1,134 @@
+* {
+    all: initial;
+    border: none;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 10px;
+    color: #f8f8f2;
+}
+
+#custom-timeprefix, #custom-cpuprefix, #pulseaudio.prefix, #custom-dateprefix, #custom-cpuprefix, #custom-memoryprefix, #custom-playerctl-prefix, #custom-playerctl-prefix{
+    font-size: 12px;
+}
+
+#custom-playerctl-prefix{
+    font-size: 11px;
+}
+
+#custom-playerctl-prefix{
+    font-size: 11px;
+}
+
+#pulseaudio{
+    background: #bd93f9;
+    color: #f8f8f2;
+}
+
+
+#tray, #custom-trayright{
+	background: #bd93f9;
+}
+
+#custom-trayright {
+    	border-radius: 0px 16px 16px 0px ;
+}
+
+
+window {
+    /* background: #f8f8f2; */
+    background: rgba(30, 30, 46, 0);
+    color: #f8f8f2;
+}
+
+#window, #clock, #custom-timeprefix, #custom-cpuprefix, #custom-memoryprefix,#cpu, #custom-dateprefix, #custom-memoryprefix, #memory, #pulseaudio, #tray, #custom-playerctl, #custom-playerctl-prefix, #custom-trayright{
+margin: 4px 0px 4px 0px;
+padding-right: 4px;
+}
+
+
+#window {
+	border-radius: 16px;
+        /*background: #282a36;*/
+    	background: rgba(30, 30, 46, 0);
+	padding: 3px;
+}
+
+#tray {
+	padding: 0px 6px 0px 6px;
+	margin-right:-6px;
+}
+
+window#waybar.solo{
+        background: #F2EBD6;
+}
+
+@import url("app.css");
+
+window#waybar.empty #window, window#waybar.solo #window{
+	background: transparent;
+}
+
+window#waybar.floating, window#waybar.tiled{
+        background: transparent;
+}
+
+/* dynamic color for some apps */
+
+
+#custom-playerctl, #custom-playerctl-prefix {
+	background: #282a36;
+	color: #f8f8f2;
+}
+
+#custom-playerctl {
+	border-radius: 0px 16px 16px 0px;
+}
+
+#custom-barpadding{
+	font-size : 0px;
+	color: transparent;
+}
+
+#workspaces {
+	all: initial;
+        background: #282a36;
+	border-radius: 16px 0px 0px 16px ;
+        margin: 4px 0px 4px 0px;
+	padding: 3px;
+	color: #f8f8f2;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0px 7px 0px 6px;
+    background: transparent;
+    border-radius: 16px;
+    color: #f8f8f2;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    background: #bd93f9;
+}
+
+#clock {
+    padding: 0 6px 0 0;
+}
+
+#clock.time, #custom-timeprefix{
+    color : #f8f8f2;
+    background-color: #282a36;
+}
+
+
+#clock.date, #custom-dateprefix, #custom-memoryprefix, #memory{
+    color : #f8f8f2;
+    background-color: #282a36;
+}
+
+#custom-cpuprefix, #cpu{
+    color : #f8f8f2;
+    background-color: #282a36;
+}
+
+#custom-cpuprefix{
+    border-radius: 16px 0px 0px 16px ;
+}
