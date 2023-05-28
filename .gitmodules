@@ -1,0 +1,3 @@
+[submodule "march-7th/.config/owlphin"]
+	path = march-7th/.config/waybar
+	url = https://github.com/lepz0r/owlphin
