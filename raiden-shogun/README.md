@@ -6,7 +6,7 @@ WM : [Hyprland](https://hyprland.org/) \
 vim color scheme: [Dracula](https://github.com/dracula/vim) \
 Bar : [Waybar](https://github.com/Alexays/Waybar) \
 Terminal : [Alacritty](https://alacritty.org) \
-Wallpaper : [雷電将軍 by くらいさん](https://www.pixiv.net/en/artworks/91124215) 
+Wallpaper : [雷電将軍 by くらいさん](https://www.pixiv.net/en/artworks/92175240) 
 
 Installation
 ------------
